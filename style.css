@@ -8,11 +8,11 @@ body {
     height: 100vh;
 }
 .bg-1{
-    background : linear-gradient(to right, hsl(180, 15%, 95%) 50%, #fff 50%);
+    background : linear-gradient(to right, hsla(180, 15%, 95%, 0.9) 50%, hsla(0, 0%, 100%, 0.9) 50%);
 
 }
 .bg-2{
-    background : linear-gradient(to left, #f0f4f4 50%, #fff 50%);
+    background : linear-gradient(to left, hsla(180, 15%, 95%, 0.9) 50%, hsla(0, 0%, 100%, 0.9) 50%);
 
 }
 .over:hover{
