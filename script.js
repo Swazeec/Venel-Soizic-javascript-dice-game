@@ -126,16 +126,19 @@ let currentPlayer, currentScore, globalScore1, globalScore2, diceResult
         // arrêter la propagation des événements
 
         // sinon, appeler nextPlayer()
+        let audio = new Audio('./audio/clap.mp3');
 
         if (globalScore1 >= 100){
             player1.textContent = "WINNER!"
             player1.innerHTML = "<span style='color: #CF2D2D' class='fw-bold'>WINNER!!</span>"
+            audio.play();
             holdBtn.removeEventListener('click', hold)
             rollDiceBtn.removeEventListener('click', rollDice)
             e.stopPropagation()
         }
         if (globalScore2 >= 100){
             player2.innerHTML = "<span style='color: #CF2D2D' class='fw-bold'>WINNER!!</span>"
+            audio.play();
             holdBtn.removeEventListener('click', hold)
             rollDiceBtn.removeEventListener('click', rollDice)
             e.stopPropagation()
