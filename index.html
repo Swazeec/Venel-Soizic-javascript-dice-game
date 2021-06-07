@@ -21,8 +21,8 @@
         <h1 class=" m-0 p-5 bg-1 text-uppercase"><i class="bi bi-dice-5 text-danger"></i> Jeu de dé <i class="bi bi-dice-5 text-danger"></i></h1>
         <!-- NOUVELLE PARTIE / REGLES -->
         <div class="col-12 bg-2 m-0 p-3">
-          <div class="over text-uppercase" id="newGame"><i class="bi bi-plus-circle text-danger pe-3 fs-5"></i>nouvelle partie</div>
-          <a class="over text-decoration-none text-dark text-uppercase" data-bs-toggle="modal" data-bs-target="#rules"><i class="bi bi-book text-danger pe-3 fs-5"></i>règles</a>
+          <button class="over text-uppercase border-0 bg-transparent" id="newGame"><i class="bi bi-plus-circle text-danger pe-3 fs-5"></i>nouvelle partie</button>
+          <div><a id="myRules" class="over text-decoration-none text-dark text-uppercase" data-bs-toggle="modal" data-bs-target="#rules"><i class="bi bi-book text-danger pe-3 fs-5"></i>règles</a></div>
         </div>
        
     </header>
@@ -48,9 +48,9 @@
             <div id="diceResult" >
               <img src="images/de-1.jpg" alt="dé, face 1" class="me-auto">
             </div>
-            <div class="mt-5">
-              <div class="over text-uppercase" id="rollDice"><i class="bi bi-arrow-repeat text-danger pe-3 fs-5"></i>lancer le dé</div>
-              <div class="over text-uppercase" id="hold"><i class="bi bi-box-arrow-in-down text-danger pe-3 fs-5"></i>garder</div>
+            <div class="mt-5 d-flex flex-column">
+              <button class="over text-uppercase bg-transparent border-0" id="rollDice"><i class="bi bi-arrow-repeat text-danger pe-3 fs-5"></i>lancer le dé</button>
+              <button class="over text-uppercase bg-transparent border-0" id="hold"><i class="bi bi-box-arrow-in-down text-danger pe-3 fs-5"></i>garder</button>
             </div>
         </section>
         <!-- JOUEUR 2 -->
@@ -86,7 +86,7 @@
             <p>Le premier arrivé à 100 remporte la partie !</p>            
         </div>
         <div class="modal-footer border-0 justify-content-center">
-          <button type="button" class="btn current text-white mb-3" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn current text-white mb-3" data-bs-dismiss="modal">FERMER</button>
         </div>
       </div>
     </div>
