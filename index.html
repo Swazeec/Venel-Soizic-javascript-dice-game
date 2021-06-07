@@ -75,23 +75,45 @@
   <div class="modal fade " id="rules" tabindex="-1" aria-labelledby="rules" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-center" id="exampleModalLabel">Les règles du jeu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header border-0 m-0 pb-0">
+          <button type="button" class="btn-close pb-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            <p>Vous avez un score global et un score temporaire.</p> 
+        <div class="modal-body text-center">
+          <h3 class="pb-4">Les règles du jeu</h3>
+            <p>Vous avez un score global et un score temporaire (CURRENT).</p> 
             <p>Lancez le dé autant de fois que vous le souhaitez pour cumuler des points temporaires et cliquez sur GARDER pour les ajouter à votre score global.</p>
             <p>Mais attention ! Si le résultat du dé est 1, vous perdez tous vos points temporaires et c’est au joueur suivant de tenter sa chance !</p>
             <p>Le premier arrivé à 100 remporte la partie !</p>            
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer border-0 justify-content-center">
+          <button type="button" class="btn current text-white mb-3" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="modal fade " id="accueil" tabindex="-1" aria-labelledby="rules" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 m-0 pb-0">
+          <button type="button" class="btn-close pb-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h2 class="h2 pb-4">Jeu de dé</h2>
+            <h3 class="h5 pb-4">Le but du jeu est simple : arriver à 100 points avant son adversaire !</h3> 
+            <p>Vous avez un score global et un score temporaire (CURRENT). </p>
+            <p>Lancez le dé autant de fois que vous le souhaitez pour cumuler des points temporaires et cliquez sur GARDER pour les ajouter à votre score global. </p>
+            <p>Mais attention ! Si le résultat du dé est 1, vous perdez tous vos points temporaires et c’est au joueur suivant de tenter sa chance !</p>   
+            <p>Alors... Ready?</p> 
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <button type="button" class="current btn btn-secondary border-0 mb-3" data-bs-dismiss="modal">Let's play!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </div>

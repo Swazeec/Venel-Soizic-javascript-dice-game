@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $('#accueil').modal('show')
+});
+
 let currentPlayer, currentScore, globalScore1, globalScore2, diceResult
 
 // Variables from DOM:
